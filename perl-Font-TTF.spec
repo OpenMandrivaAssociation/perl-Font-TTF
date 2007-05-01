@@ -1,6 +1,6 @@
 %define module	Font-TTF
 %define name	perl-%{module}
-%define version	0.40
+%define version	0.41
 %define tarversion  %version
 %define release	%mkrel 1
 
