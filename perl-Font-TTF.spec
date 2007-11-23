@@ -1,6 +1,6 @@
 %define module	Font-TTF
 %define name	perl-%{module}
-%define version	0.42
+%define version	0.43
 %define release	%mkrel 1
 
 Summary:	Perl module for TrueType Font hacking
