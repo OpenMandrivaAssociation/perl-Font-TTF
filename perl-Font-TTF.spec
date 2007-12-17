@@ -12,7 +12,6 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}/
 Source:     http://www.cpan.org/modules/by-module/Font/%{module}-%{version}.tar.gz
 BuildArch:	noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 Perl module to manipulate TTF fonts, needed by perl-Text-PDF.
