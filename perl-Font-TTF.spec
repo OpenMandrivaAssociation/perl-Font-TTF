@@ -1,24 +1,24 @@
-%define module	Font-TTF
-%define name	perl-%{module}
-%define version	0.45
-%define release	%mkrel 1
+%define upstream_name	 Font-TTF
+%define upstream_version 0.45
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Perl module for TrueType Font hacking
-Version:	%{version}
-Name:		%{name}
-Release:	%{release}
 License:	Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}/
-Source:     http://www.cpan.org/modules/by-module/Font/%{module}-%{version}.tar.gz
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:    http://www.cpan.org/modules/by-module/Font/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildArch:	noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Perl module to manipulate TTF fonts, needed by perl-Text-PDF.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -41,4 +41,3 @@ rm -rf %{buildroot}
 %{_mandir}/*/*
 %{perl_vendorlib}/Font/
 %{perl_vendorlib}/ttfmod.pl
-
