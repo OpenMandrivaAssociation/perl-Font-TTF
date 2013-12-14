@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Font/Font-TTF-1.02.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires:  perl(Compress::Zlib)
 BuildRequires:  perl(IO::String)
 BuildArch:	noarch
 
