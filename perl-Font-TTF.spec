@@ -1,15 +1,15 @@
 %define upstream_name	 Font-TTF
-%define upstream_version 1.02
+%define upstream_version 1.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.02
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Perl module for TrueType Font hacking
 License:	Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Font/Font-TTF-1.02.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Font/Font-TTF-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:  perl(Compress::Zlib)
@@ -99,5 +99,6 @@ Import perl-Font-TTF
 
 * Thu Dec 25 2003 Michael Scherer <misc@mandrake.org> 0.34-1mdk 
 - introdution in contrib.
+
 
 
