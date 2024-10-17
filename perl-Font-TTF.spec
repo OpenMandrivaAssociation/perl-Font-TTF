@@ -8,7 +8,7 @@ Release:	8
 Summary:	Perl module for TrueType Font hacking
 License:	Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Font/Font-TTF-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(Test::Simple)
