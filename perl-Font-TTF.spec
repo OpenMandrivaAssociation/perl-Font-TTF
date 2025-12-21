@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Font/Font-TTF-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl(Test::Simple)
 BuildRequires:	perl-devel
 BuildRequires:  perl(Compress::Zlib)
